@@ -17,8 +17,10 @@ pipeline {
 
         stage('front-end unit') {
           steps {
-            sh '''cd curriculum-front && npm i && npm install --save-dev vue-jest && npm run test:unit
-'''
+            sh 'cd curriculum-front '
+            sh 'npm install --save-dev vue-jest'
+            sh 'npm -i'
+            sh 'npm test:unit'
           }
         }
 
