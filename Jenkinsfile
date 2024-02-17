@@ -12,6 +12,7 @@ pipeline {
         stage('log') {
           steps {
             sh 'ls -al'
+            sh 'echo "test"'
           }
         }
 
