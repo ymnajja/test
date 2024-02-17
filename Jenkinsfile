@@ -21,7 +21,7 @@ pipeline {
             sh 'cd curriculum-front '
             sh 'npm install --save-dev vue-jest'
             sh 'npm install'
-            sh 'npm test:unit'
+            sh 'npm run test:unit'
           }
         }
 
